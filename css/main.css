@@ -263,3 +263,25 @@ textarea {
   }
 }
 
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.nav-li{
+  float:left;
+}
+.nav-li .nav-a{
+  display: block;
+  padding: 25px 40px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-a:hover{
+  color: #F64C72;
+}
