@@ -35,6 +35,9 @@ $( document ).ready(function() {
         else if(text == "Contact Us"){
             currentPage = $("#contact");
         }
+        else if(text == "Chat"){
+            currentPage = $("#chat")
+        }
         $(".active-page").removeClass("active-page")
         $(".active-nav").removeClass("active-nav");
         $(this).addClass("active-nav")
