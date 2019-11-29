@@ -327,7 +327,7 @@ textarea {
 .carousel-fade-in {
   -webkit-animation-name: fade-in;
   -webkit-animation-duration: 1.5s;
-  animation-name: fade-in; 
+  animation-name: fade-in;
   animation-duration: 1.5s;
 }
 
@@ -369,7 +369,16 @@ textarea {
   to {opacity: 1}
 }
 
-/* Pages */ 
+/*Contact us*/
+.contact-us{
+  background-color: lavender;
+  height: 40%;
+  padding: 10px;
+  margin: 5px;
+  border: 5px solid darkgrey;
+}
+
+/* Pages */
 
 .page {
   display: none;
