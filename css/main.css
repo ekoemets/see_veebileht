@@ -1,21 +1,23 @@
 /* Pages */
-
 .page {
   display: none;
 }
 
-.active-page {
+#main {
   display: block;
 }
 
 /* Navigation bar */
 .nav-ul {
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.10);
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 3fr;
+  background-color: rgb(241, 241, 241);
+
 }
 
 
@@ -233,9 +235,7 @@ img.nav-logo {
 
 .footer {
   box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.5);
-
   height: 4rem;
-  ;
   background: rgb(228, 228, 228);
   bottom: 0;
   position: absolute;
@@ -267,7 +267,7 @@ img.nav-logo {
 }
 
 /*Contact us*/
-.contact-us{
+.contact-us {
   background-color: lavender;
   height: 95%;
   padding: 10px;
