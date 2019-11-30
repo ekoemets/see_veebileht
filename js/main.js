@@ -43,4 +43,17 @@ $( document ).ready(function() {
         $(this).addClass("active-nav")
         currentPage.addClass("active-page");
     })
+
+    $(".nav-button").click(function(){
+        let navLinks = $(".nav-div");
+        console.log($(".nav-div"))
+        console.log(navLinks.css("display"))
+        if(navLinks.css("display") === "none"){
+            console.log("Setting block")
+            navLinks.css("display", "flex");
+        }
+        else{
+            navLinks.css("display", "none");
+        }
+    })
 });

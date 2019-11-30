@@ -10,8 +10,8 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/boilerplate.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -24,13 +24,23 @@
 
   <!-- Add your site or application content here -->
   <ul class="nav-ul">
-    <li class="nav-li"><img src="img/logo.png" alt="" id="nav-logo"></li>
-    <div id="nav-links">
-      <li class="nav-li"><a class="nav-a active-nav" href="">Home</a></li>
-      <li class="nav-li"><a class="nav-a" href="">Contact Us</a></li>
-      <li class="nav-li"><a class="nav-a" href="">About</a></li>
-      <li class="nav-li"><a class="nav-a" href="">Chat</a></li>
+    <li class="nav-li nav-logo"><img class="nav-logo" src="img/puzzle.png"></li>
+    <div id="nav-button-container">
+      <div class="nav-button">
+        <div class="nav-button-bar"></div>
+        <div class="nav-button-bar"></div>
+        <div class="nav-button-bar"></div>
+      </div>
     </div>
+    <div class="nav-div">
+      <div class="nav-links">
+        <li class="nav-li"><a class="nav-a active-nav" href="">Home</a></li>
+        <li class="nav-li"><a class="nav-a" href="">Contact Us</a></li>
+        <li class="nav-li"><a class="nav-a" href="">About</a></li>
+        <li class="nav-li"><a class="nav-a" href="">Chat</a></li>
+      </div>
+    </div>
+
   </ul>
 
   <div class="page active-page" id="main">
@@ -47,22 +57,32 @@
     </div>
     <div class="col-grid-3">
       <div class="info">
-        <img src="https://img.icons8.com/nolan/96/000000/folder-invoices.png">
+        <img src="img/folder-invoices.png">
         <h3>Header1</h3>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat metus. Ut finibus aliquet metus vel fermentum. Vestibulum a imperdiet nisl. Donec lacinia magna mauris, eget lacinia metus suscipit.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat metus. Ut finibus aliquet
+          metus vel fermentum. Vestibulum a imperdiet nisl. Donec lacinia magna mauris, eget lacinia metus. Donec lacinia magna mauris, eget lacinia metus
+          suscipit.</span>
       </div>
       <div class="info">
-        <img src="https://img.icons8.com/nolan/96/000000/home.png">
+        <img src="img/home.png">
         <h3>Header2</h3>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper nisi in lacus ultrices egestas. Fusce rutrum et mauris eu cursus. Donec et vehicula tortor. Duis ornare lacus vel libero.</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper nisi in lacus ultrices egestas.
+          Fusce rutrum et mauris eu cursus. Donec et vehicula tortor. Duis ornare lacus vel libero. Donec lacinia magna mauris, eget lacinia metus.</span>
       </div>
       <div class="info">
-        <img src="https://img.icons8.com/nolan/96/000000/map.png">
+        <img src="img/map.png">
         <h3>Header3</h3>
         <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget erat interdum, dictum lacus ac, aliquet magna. Donec ac finibus tellus, ac finibus nibh. Phasellus gravida a est non laoreet.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget erat interdum, dictum lacus ac, aliquet
+          magna. Donec ac finibus tellus, ac finibus nibh. Phasellus gravida a est non laoreet. Donec lacinia magna mauris, eget lacinia metus.
         </span>
       </div>
+    </div>
+    <div class="footer">
+      <i>Follow us</i>
+      <img class="foot-img" src="img/facebook.png">
+      <img class="foot-img" src="img/instagram-new.png">
+      <img class="foot-img" src="img/twitter.png">
 
     </div>
   </div>
