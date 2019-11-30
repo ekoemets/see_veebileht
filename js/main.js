@@ -21,35 +21,38 @@ $( document ).ready(function() {
         selectImage(currentId, true)
     });
 
-
+    let currentPage = $("#main");
     $(".nav-a").click(function(event) {
         event.preventDefault();
+        currentPage.css("display", "none")
         let text = $(this).text();
-        let currentPage;
-        if(text == "Home"){
-            currentPage = $("#main");
+        switch(text){
+            case "Home":
+                currentPage = $("#main");
+                break
+            case "About":
+                currentPage = $("#about");
+                break
+            case "Contact Us":
+                currentPage = $("#contact");
+                break
+            case "Feed":
+                currentPage = $("#feed");
         }
-        else if(text == "About"){
-            currentPage = $("#about");
+        if(text == "Feed"){
+            currentPage.css("display", "flex")
         }
-        else if(text == "Contact Us"){
-            currentPage = $("#contact");
+        else{
+            currentPage.css("display", "block")
         }
-        else if(text == "Chat"){
-            currentPage = $("#chat")
-        }
-        $(".active-page").removeClass("active-page")
         $(".active-nav").removeClass("active-nav");
         $(this).addClass("active-nav")
-        currentPage.addClass("active-page");
     })
 
     $(".nav-button").click(function(){
         let navLinks = $(".nav-div");
-        console.log($(".nav-div"))
         console.log(navLinks.css("display"))
         if(navLinks.css("display") === "none"){
-            console.log("Setting block")
             navLinks.css("display", "flex");
         }
         else{

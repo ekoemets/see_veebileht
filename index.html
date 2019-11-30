@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/boilerplate.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/feed.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -23,8 +24,8 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <ul class="nav-ul">
-    <li class="nav-li nav-logo"><img class="nav-logo" src="img/puzzle.png"></li>
+  <div class="nav-ul">
+    <div class="nav-li nav-logo"><img class="nav-logo" src="img/puzzle.png"></div>
     <div id="nav-button-container">
       <div class="nav-button">
         <div class="nav-button-bar"></div>
@@ -34,16 +35,16 @@
     </div>
     <div class="nav-div">
       <div class="nav-links">
-        <li class="nav-li"><a class="nav-a active-nav" href="">Home</a></li>
-        <li class="nav-li"><a class="nav-a" href="">Contact Us</a></li>
-        <li class="nav-li"><a class="nav-a" href="">About</a></li>
-        <li class="nav-li"><a class="nav-a" href="">Chat</a></li>
+        <div class="nav-li"><a class="nav-a active-nav" href="">Home</a></div>
+        <div class="nav-li"><a class="nav-a" href="">Contact Us</a></div>
+        <div class="nav-li"><a class="nav-a" href="">About</a></div>
+        <div class="nav-li"><a class="nav-a" href="">Feed</a></div>
       </div>
     </div>
 
-  </ul>
+  </div>
 
-  <div class="page active-page" id="main">
+  <div class="page" id="main">
     <div class="carousel-container">
       <div class=carousel-div>
         <img class="carousel-img carousel-fade-in carousel-default" src="img/sunset1.jpg" alt="">
@@ -60,21 +61,24 @@
         <img src="img/folder-invoices.png">
         <h3>Header1</h3>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a feugiat metus. Ut finibus aliquet
-          metus vel fermentum. Vestibulum a imperdiet nisl. Donec lacinia magna mauris, eget lacinia metus. Donec lacinia magna mauris, eget lacinia metus
+          metus vel fermentum. Vestibulum a imperdiet nisl. Donec lacinia magna mauris, eget lacinia metus. Donec
+          lacinia magna mauris, eget lacinia metus
           suscipit.</span>
       </div>
       <div class="info">
         <img src="img/home.png">
         <h3>Header2</h3>
         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper nisi in lacus ultrices egestas.
-          Fusce rutrum et mauris eu cursus. Donec et vehicula tortor. Duis ornare lacus vel libero. Donec lacinia magna mauris, eget lacinia metus.</span>
+          Fusce rutrum et mauris eu cursus. Donec et vehicula tortor. Duis ornare lacus vel libero. Donec lacinia magna
+          mauris, eget lacinia metus.</span>
       </div>
       <div class="info">
         <img src="img/map.png">
         <h3>Header3</h3>
         <span>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget erat interdum, dictum lacus ac, aliquet
-          magna. Donec ac finibus tellus, ac finibus nibh. Phasellus gravida a est non laoreet. Donec lacinia magna mauris, eget lacinia metus.
+          magna. Donec ac finibus tellus, ac finibus nibh. Phasellus gravida a est non laoreet. Donec lacinia magna
+          mauris, eget lacinia metus.
         </span>
       </div>
     </div>
@@ -129,7 +133,23 @@
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
   </div>
-  <div class="page" id="chat">
+  <div class="page" id="feed">
+    <div class="" id="feed-container">
+      <div class="" id="feed-cards">
+      </div>
+      <div id="feed-form">
+        <textarea class="feed-input" id="feed-textarea" rows="3" placeholder="Write something here..."></textarea>
+        <div id="feed-btn-container">
+          <input class="feed-input" type="text" name="" id="feed-username" placeholder="Name">
+          <button id="feed-btn" disabled>Send</button>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
   </div>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
@@ -141,6 +161,7 @@
   </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/feed.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
