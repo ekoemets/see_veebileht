@@ -283,3 +283,23 @@ img.nav-logo {
   max-height: 100vh;
   margin: auto;
 }
+.column {
+  float: left;
+  width: 50%;
+  background-image:url("https://cdn02.plentymarkets.com/epz0zx1qug71/item/images/175503/full/Tapete-Struktur-beige-creme-AS-Creation-31967-3-17.jpg");
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.myDivElement{
+    text-align:center;
+}
+.myDivElement ul li{
+   display:table;
+   margin:0 auto;
+
+ }
