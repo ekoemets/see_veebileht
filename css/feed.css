@@ -68,7 +68,7 @@
 .card-text {
   grid-column: span 2;
   padding: 1em 1.5em;
-  word-wrap: none;
+  word-wrap: break-word;
   font-size: 15px;
 }
 
