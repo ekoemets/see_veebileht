@@ -286,6 +286,7 @@ img.nav-logo {
 .column {
   float: left;
   width: 50%;
+  text-align:center;
 }
 
 /* Clear floats after the columns */
@@ -311,4 +312,17 @@ img.nav-logo {
 }
 h1{
   text-shadow: 5px 5px 3px lavender;
+}
+.MarviniEri{
+  font-style: italic;
+  font-size: larger;
+}
+.page2{
+  display:none;
+  text-align:center;
+}
+.page2 iframe{
+  width:820px;
+  height:520px;
+  border:0px;
 }
