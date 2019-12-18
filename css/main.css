@@ -1,3 +1,13 @@
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
 /* Pages */
 .page {
   display: none;
